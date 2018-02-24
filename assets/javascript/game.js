@@ -1,7 +1,7 @@
 
 
-var x = 19
-var y = 120
+var wins = 0
+var losses = 0
 
 var generate1 = "";
 var result = "";
@@ -16,21 +16,25 @@ var ruby,
 
 $(document).ready(function(){
 
-
+    resetTotalScore();
 
     $(".crystals").on("click", function() {
         crystalVal = $(this).attr("value");
-        console.log(crystalVal)
         totalScore = totalScore + parseInt(crystalVal);
         $('#insertScore').text(totalScore);
-    })
+        if (totalScore === targetScore) {
+            wins++;
+            $('#winCounter').text(wins);
+        } else if (totalScore > targetScore) {
+            losses++;
+            $('#lossCounter').text(losses);
+        }
+    });
 
         $('#ruby').attr('value', randomize(12, 1));
         $('#diamond').attr('value', randomize(12, 1));
         $('#sapphire').attr('value', randomize(12, 1));
         $('#emerald').attr('value', randomize(12, 1));
-
-        
 
 
    // Generate random number btwn 19-120 to display on screen when game starts.
@@ -67,14 +71,21 @@ $(document).ready(function(){
     // create function that adds values together.
         // and displays total values at id "totalScore"
 
-
-
-
-
-
+        function resetTotalScore() {
+            totalScore = 0;
+        }
 
     });
 
+    randomize();
+    resetTotalScore();
+
+    // Without the help of TA and other students, I wouldn't have been able to piece it together.
+    // Game doesn't reset score yet once won or lost or without refresh, but I am on the right track.
+    // I signed up for the tutoring program. It's just going to take longer for me.
+
+    
+    
 
 
 
