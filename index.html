@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+      
+    <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Added a link to Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Crystal Collector</title>
+</head>
+<body>
+    
+
+<div id="container"> 
+    <div class="row">
+        <div class="col-lg-3"> 
+            <header id="header">
+                <h1 class="text-center">Crystal Collector</h1>
+            </header>
+        </div>
+    </div>
+        <br>
+
+        <div class="row">
+            <div class="rules-of-the-game">
+                <h2>Rules of the Game</h2>
+                <br>
+                <p>You will be given a random number at the start of the game.</p>
+                <br>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <br>
+                <p>You win the game by matching your total score to random number,  you lose the game if your total score goes above the random number.</p>
+                <br>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <br>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row" id="randomAndCounters">
+            <div class="col-md-2" id="matchNumber">
+                <strong>Number to Match: <span id="targetScore"></span></strong>
+            </div>
+            <div class="col-md-2" id="counters">
+                <strong>Wins: <span id="winCounter"></span></strong>
+                <br>
+                <strong>Losses: <span id="lossCounter"></span></strong>
+            </div>
+        </div>
+          
+        <br>
+
+        <div class="images">
+            <div class="row buttons" class="gems">
+                <div class="col-md-8">
+                    <img class="crystals" src="assets/images/ruby.png" id="ruby" value="5" alt="red">
+                
+                    <img class="crystals" src="assets/images/diamond.png" id="diamond" value="10" alt="blue">
+                
+                    <img class="crystals" src="assets/images/sapphire.png" id="sapphire" value="15" alt="yellow">
+
+                    <img class="crystals" src="assets/images/emerald.png" id="emerald" value="20" alt="green">
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="scoreText"><strong>Your Total Score:</strong></div>
+            </div>
+        </div>
+        <br>
+
+        <div class="rowScore">
+            <div class="col-md-2">
+                <div id="scoreHolder"><strong><span id="totalScore"></span></strong></div>
+            </div>
+        </div>
+
+</div>
+
+<script src="assets/javascript/game.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

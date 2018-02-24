@@ -1,0 +1,50 @@
+body {
+    background-color: skyblue;
+    margin-left: 25px;
+    
+}
+
+.row {
+    margin: 0 auto;
+}
+
+header {
+    padding: 5px;
+    background-color: red;
+}
+
+h1, h2 {
+    font-family: 'Shrikhand', cursive;
+}
+
+.rules-of-the-game {
+    line-height: 8px;
+}
+
+
+#matchNumber {
+    background-color: white;
+    padding: 30px;
+    margin-right: 30px;
+}
+
+
+#counters {
+    background-color: white;
+    padding: 20px;
+}
+
+
+
+.images {
+    margin-top: 5px;
+}
+
+
+#scoreText {
+    background-color: white;
+}
+
+#viewscore {
+    background-color: white;
+}
