@@ -10,28 +10,23 @@ crystalVal ="";
 
 $(document).ready(function(){
 
-   
-
-    //MY FOR LOOP WORKS IN CONSOLE ONLY BUT NOT ON SCREEN.//
-        for (var i = 0; i < 9; i++) {
-            var generate1 = Math.floor(Math.random() * 120) + 1;
-            result = generate1 + result;
-            $("#start")
-        }
-        console.log(generate1);
-    
     $(".crystals").on("click", function() {
         crystalVal = $(this).attr("value");
         console.log(crystalVal)
     })
 
         
-
+ //MY FOR LOOP WORKS IN CONSOLE ONLY BUT DISPLAYS LARGER THAN MAX # 120 ON SCREEN.//
    // Generate random number btwn 19-120 to display on screen when game starts.
         // and when game restarts.
-        // ---> insert number generated at "start" id w/in "matchNumber" div.
+        // ---> insert number generated at "targetScore" id w/in "matchNumber" div.
 
-
+        for (var i = 0; i < 1; i++) {
+            var generate1 = Math.floor(Math.random() * 120) + 1;
+            result = generate1 + result;
+            $("#targetScore").text(result)
+        }
+        console.log(generate1);
 
     // create onclick event function to randomly generate crystal values btwn 1-12 when clicked.
         // and when game restarts.
