@@ -7,7 +7,7 @@ var generate1 = "";
 var result = "";
 var targetScore ="";
 var crystalVal ="";
-var totalScore ="";
+var totalScore = 0;
 
 var ruby,
     diamond,
@@ -21,14 +21,16 @@ $(document).ready(function(){
     $(".crystals").on("click", function() {
         crystalVal = $(this).attr("value");
         console.log(crystalVal)
+        totalScore = totalScore + parseInt(crystalVal);
+        $('#insertScore').text(totalScore);
     })
 
         $('#ruby').attr('value', randomize(12, 1));
         $('#diamond').attr('value', randomize(12, 1));
         $('#sapphire').attr('value', randomize(12, 1));
         $('#emerald').attr('value', randomize(12, 1));
-        
 
+        
 
 
    // Generate random number btwn 19-120 to display on screen when game starts.
@@ -55,7 +57,7 @@ $(document).ready(function(){
         targetScore = randomize(120, 19);
             $("#targetScore").text(targetScore); 
 
-        totalScore = totalScore + parseInt(crystalVal);
+        
 
     // create function when score matches exactly to increase wins by 1.
     // create function when score goes above random number to increase losses by 1.
@@ -64,16 +66,6 @@ $(document).ready(function(){
 
     // create function that adds values together.
         // and displays total values at id "totalScore"
-
-
-
-
-
-
-
-
-
-
 
 
 
