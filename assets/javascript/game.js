@@ -8,6 +8,11 @@ result = "";
 targetScore ="";
 crystalVal ="";
 
+var ruby,
+    diamond,
+    sapphire,
+    emerald = crystalVal;
+
 $(document).ready(function(){
 
     $(".crystals").on("click", function() {
@@ -32,9 +37,11 @@ $(document).ready(function(){
         // and when game restarts.
         // ---> values are hidden until clicked.
         // ---> when clicked, their value is displays and inserted at span id "total-score" w/in "scoreHolder" div.
-        function getRandomInt(min, max) {
-            targetScore = getRandomInt(19, 120);
-            $("#insertScore").text(targetScore);  
+        
+        function randomize(max, min) {
+            return Math.floor(Math.random()*(max-min+1))+min;
+            targetScore = randomize(120, 19);
+            $("#targetScore").text(targetScore);  
         }
     
         totalScore = totalScore + parseInt(crystalVal);
