@@ -18,8 +18,8 @@
    - [x] When they do click one, update the player's score counter
    - [x] The player wins if their total score matches the random number from the beginning of the game
    - [x] The player loses if their score goes above the random number
-   - [] The game restarts whenever the player wins or loses
-   - [] When the game begins again, the player should see a new random number
+   - [ ] The game restarts whenever the player wins or loses
+   - [ ] When the game begins again, the player should see a new random number
    - [x] Also, all the crystals will have four new hidden values
    - [x] Of course, the user's score (and score counter) will reset to zero
    - [x] The app should show the number of games the player wins and loses
