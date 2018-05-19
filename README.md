@@ -2,15 +2,11 @@
 
 ## Game Rules:
 
-   > The `random number to match` will be displayed at the start of the game.
-> By clicking on a crystal you will add a specific amount of points to your total score.
-   > You win the game by matching your total score to random number
-
-> You lose the game if your total score goes above the random number.
+   > The `random number to match` will be displayed at the start of the game. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.
 
    * The value of each crystal is hidden from you until you click on it.
    * Each time when the game starts, the game will change the values of each crystal.
-   - [x] Each crystal should have a random hidden value between 1 - 12.
+   * Each crystal should have a random hidden value between 1 - 12.
 
 ## Game Functionality:
 
