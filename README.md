@@ -4,15 +4,15 @@
 
    > The `random number to match` will be displayed at the start of the game. By clicking on a crystal you will add a specific amount of points to your total score. You win the game by matching your total score to random number. You lose the game if your total score goes above the random number.
 
-   * The value of each crystal is hidden from you until you click on it.
-   * Each time when the game starts, the game will change the values of each crystal.
-   * Each crystal should have a random hidden value between 1 - 12.
+   * The value of each crystal is hidden from you until you click on it
+   * Each time when the game starts, the game will change the values of each crystal
+   * Each crystal should have a random hidden value between 1 - 12
 
 ## Game Functionality:
 
-   - [x] There will be four crystals displayed as buttons on the page.
-   - [x] The player will be shown a random number at the start of the game.
-   - [x] When the player clicks on a crystal, it will add a specific amount of points to the player's total score.
+   - [x] There will be four crystals displayed as buttons on the page
+   - [x] The player will be shown a random number at the start of the game
+   - [x] When the player clicks on a crystal, it will add a specific amount of points to the player's total score
    - [x] The random number shown at the start of the game should be between 19 - 120
    - [x] Your game will hide this amount until the player clicks a crystal
    - [x] When they do click one, update the player's score counter
