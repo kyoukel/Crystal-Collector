@@ -1,4 +1,4 @@
-# Crystal Collector Game
+# Crystals Collector Game
 
 ## Game Rules:
 
