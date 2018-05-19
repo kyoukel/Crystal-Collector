@@ -6,14 +6,14 @@
 
 * The value of each crystal is hidden from you until you click on it
 * Each time when the game starts, the game will change the values of each crystal
-* Each crystal should have a random hidden value between 1-12
 
 ## Game Functionality:
 
    - [x] There will be four crystals displayed as buttons on the page
    - [x] The player will be shown a random number at the start of the game
    - [x] When the player clicks on a crystal, it will add a specific amount of points to the player's total score
-   - [x] The random number shown at the start of the game should be between 19 - 120
+   - [x] Each crystal should have a random hidden value between 1-12
+   - [x] The random number shown at the start of the game should be between 19-120
    - [x] Your game will hide this amount until the player clicks a crystal
    - [x] When they do click one, update the player's score counter
    - [x] The player wins if their total score matches the random number from the beginning of the game
