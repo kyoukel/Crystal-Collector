@@ -6,7 +6,7 @@
 
 * The value of each crystal is hidden from you until you click on it
 * Each time when the game starts, the game will change the values of each crystal
-* Each crystal should have a random hidden value between 1 - 12
+* Each crystal should have a random hidden value between 1-12
 
 ## Game Functionality:
 
