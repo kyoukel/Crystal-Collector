@@ -1,47 +1,68 @@
 body {
-    background-color: skyblue;
+    background-color: #542888;
     margin-left: 25px;
+    color: white;
+}
+
+#container {
+    font-size: 18px;
+    font-family: cursive;
+    line-height: 22px;
+    margin-right: 27px;
+}
+
+#rules {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .instructions {
     top: 5px;
-}
-
+    margin-left: 27px;
+} 
 
 .row {
     margin: 0 auto;
-
+    padding: 0;
 }
 
-header {
-    padding: 5px;
+#header {
+    margin-left: 35%;
+    font-size: 28px;
+    font-weight: bolder;
 }
 
-h1, h2 {
-    font-family: 'Shrikhand', cursive;
+#header h1 {
+    padding: 10px;
 }
-
-.rules-of-the-game {
-    line-height: 8px;
-}
-
 
 #matchNumber {
-    padding: 30px;
-    margin-right: 30px;
+    padding: 25px;
+    margin-right: 40px;
+    font-weight: bold;
 }
-
 
 #counters {
     padding: 20px;
-    line-height: 25px;
+    font-weight: bold;
 }
 
 .crystals {
     margin-right: 35px;
 }
 
+#scoreText {
+    font-weight: bold;
+}
 
+#finalScore {
+    margin-left: 15px;
+    padding: 5px;
+}
+
+.crystals {
+    margin-left: 15px;
+}
 
 
 

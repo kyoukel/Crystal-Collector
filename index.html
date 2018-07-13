@@ -17,7 +17,7 @@
     
 
 <div id="container"> 
-    <div class="row">
+    <div class="row" id="headCenter">
         <div class="col-lg-3"> 
             <header id="header">
                 <h1>Crystals Collector</h1>
@@ -28,7 +28,7 @@
 
         <div class="row">
             <div class="instructions">
-                <h2>Rules of the Game</h2>
+                <h2 id="rules">Rules of the Game</h2>
                 <br>
                 <p>You will be given a random number at the start of the game.</p>
                 <br>
@@ -41,8 +41,9 @@
                 <p>Each time when the game starts, the game will change the values of each crystal.</p>
             </div>
         </div>
+
         <br>
-        <br>
+
 
         <div class="row" id="randomAndCounters">
             <div class="col-md-3" id="matchNumber">
@@ -59,7 +60,7 @@
 
         <div class="images">
             <div class="row buttons" class="gems">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <img class="crystals" src="assets/images/ruby.png" id="ruby" value="5" alt="red">
                 
                     <img class="crystals" src="assets/images/diamond.png" id="diamond" value="10" alt="blue">
@@ -73,23 +74,22 @@
 
         <br>
 
-        <div class="row">
-            <div class="col-md-2">
+        <div class="row" id="finalScore">
+            
+            <div class="col-md-3">
                 <div id="scoreText"><strong>Your Total Score:</strong></div>
             </div>
-        </div>
-        <br>
 
-        <div class="row">
+            <div class="col" id="viewscore">
+                <div id="scoreHolder"><strong><span id="insertScore"></span></strong></div>
+            </div>
+
             <div class="col-md-2" id="viewscore">
                 <div id="scoreHolder"><strong><span id="insertScore"></span></strong></div>
             </div>
-        </div>     <div class="col-md-2" id="viewscore">
-                <div id="scoreHolder"><strong><span id="insertScore"></span></strong></div>
-            </div>
         </div>
-
 </div>
+
 
 <!-- Added link to the jQuery Library -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
